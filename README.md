@@ -1,15 +1,24 @@
-# Local development
+# Clinical Decision Support (CDS) MCP Server
+### Agents Assemble Hackathon Submission — Prompt Opinion
 
-Start with `npm install`.
+A SHARP-compliant MCP server that gives any healthcare agent real-time drug interaction, contraindication, dosing, and allergy checks via live FHIR data.
 
-And then run `npm run start`.
+## Live Server
+https://cds-mcp-server-production.up.railway.app
 
-# Debugging with vscode
+## Marketplace
+https://app.promptopinion.ai/marketplace
 
-We use [tsx](https://tsx.is/vscode) to debug the server locally. To debug in vscode:
+## Tools
+- `CheckDrugInteractions`
+- `CheckContraindications`
+- `GetDosingGuidelines`
+- `FlagAllergyConflicts`
 
-- (Optional) Add your breakpoints in vscode now. You can always do this later.
-- Ensure `index.ts` is opened and it is the current active tab.
-- On the left hand navigation pane in vscode, select the `Run and Debug` tab.
-- Ensure `tsx` is the selected configuration in the dropdown.
-- Click on the green play (Start Debugging) button.
+## Setup
+```bash
+npm install
+npm start
+```
+
+Built with TypeScript · MCP · SHARP · FHIR R4 · Railway
